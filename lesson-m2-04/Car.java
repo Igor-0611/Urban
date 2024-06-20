@@ -7,18 +7,19 @@ public class Car {
     int weight;
 
     public void getInfo() {
-        System.out.printf("\n" + carBrand + ", скорость " + speed + " км/ч, вес " + weight + " кг.");
+        System.out.printf("\n" + carBrand + ", скорость " + speed + " км/ч, вес " + weight + " кг. \n");
     }
 
     public void getMark() {
 
-        System.out.printf("\n Оцените работу двигателя от 0 до 5 - ");
-        Engine engine = new Engine();
+        System.out.printf(" Оцените работу двигателя от 0 до 5 - ");
         int markEngine = new Scanner(System.in).nextInt();
+        Engine engine = new Engine();
+
 
         System.out.printf(" Оцените работу двигателя от 0 до 5 - ");
-        Body body = new Body();
         int formBody = new Scanner(System.in).nextInt();
+        Body body = new Body();
 
         System.out.printf("\n");
 
@@ -26,7 +27,7 @@ public class Car {
         body.toForm(formBody);
     }
 
-    private class Engine {
+    private static class Engine {
 
         public void toRun(int mark) {
 
@@ -35,7 +36,7 @@ public class Car {
                     System.out.printf(" двигатель работает на " + mark + ". \n");
                 }
                 public void actBroken() {
-                    System.out.printf(" двигатель не заводиться. \n");
+                    System.out.printf(" двигатель не заводится. \n");
                 }
             }
 
@@ -46,7 +47,7 @@ public class Car {
 
     }
 
-    private class Body {
+    private static class Body {
 
         public void toForm(int mark) {
 
@@ -55,7 +56,7 @@ public class Car {
                     System.out.printf(" состояние кузова на " + mark + ". \n");
                 }
                 public void bodyBroken() {
-                    System.out.printf(" кузов не прдлежит ремонту. \n");
+                    System.out.printf(" кузов не подлежит ремонту. \n");
                 }
             }
 

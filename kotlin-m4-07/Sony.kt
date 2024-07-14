@@ -1,0 +1,3 @@
+
+class Sony : IPhone() {
+}

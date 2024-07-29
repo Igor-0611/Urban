@@ -1,4 +1,4 @@
-https://github.com/Igor-0611/Urban/blob/main/kotlin-m6-01.kt
+[kotlin-m6-01.kt](https://github.com/Igor-0611/Urban/blob/main/kotlin-m6-01.kt)
 
 Домашнее задание по теме "Лямбда \- выражения"
 

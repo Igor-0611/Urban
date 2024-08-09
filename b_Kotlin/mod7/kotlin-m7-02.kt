@@ -18,7 +18,7 @@ fun main() {
     with(arr) {
         println("Массив - ${this.contentToString()}")
         println("количество элементов массива - ${this.size}")
-        println("сумму элементов массива - ${this.sum()}")
+        println("сумма элементов массива - ${this.sum()}")
     }
 }
 
